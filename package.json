@@ -1,0 +1,11 @@
+{
+  "name": "chat-widget",
+  "version": "1.0.0",
+  "description": "chat widget to web sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Pereira",
+  "license": "ISC"
+}
