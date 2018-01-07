@@ -6,66 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">  
     <title>Chat</title>
 </head>
-<body>
+<body style="background-color: blueviolet">
     <div id="chat-widget" class="chat offset-lg-9 col-lg-3 offset-md-8 col-md-4 offset-sm-6 col-sm-6 offset-xs-0 col-xs-12">
-        <div class="panel panel-primary">
+        <div class="panel panel-default">
             <!--start header-->
             <div class="panel-heading">
-                <div class="chat-header clearfix">
+                <div class="chat-header-content clearfix">
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar" />        
                     <div class="chat-about">
-                        <div class="chat-with">Vincent</div>
-                        <div class="chat-status">Activo</div>             
+                        <div class="chat-name">Vincent</div>
+                        <div class="chat-status">Activo <i class="fa fa-circle online"></i></div>             
                     </div>
                     <div class="chat-menu">
-                        <i class="fa fa-minus" aria-hidden="true"></i>
-                        <i class="fa fa-times" aria-hidden="true"></i>
+                        <i id="btn-minimize" class="fa fa-minus" aria-hidden="true"></i>
+                        <i id="btn-close" class="fa fa-times" aria-hidden="true"></i>   
                     </div>
                 </div>
             </div>
             <!--end header-->
             <!--start body-->
-            <div style="background-color: white;" class="panel-body">
+            <div class="panel-body">
                 <div class="chat-history">
-                    <ul>
-                        <li>
-                            <div class="message-data">
-                               <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
-                               <span class="message-data-time">10:12 AM, Today</span>
+                        <div>
+                                <div class="message-data ml-1">
+                                    <span class="message-data-name">Vincent</span>
+                                </div>
+                                <div class="message my-message ml-1">
+                                    Are we meeting today? Project has been already finished and I have results to show you.
+                                </div>
                             </div>
-                            <div class="message my-message">
-                                Are we meeting today? Project has been already finished and I have results to show you.
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="message-data align-right">
-                                <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>          
-                            </div>
-                            <div class="message other-message float-right">
-                                Hi Vincent, how are you? How is the project coming along?
-                            </div>
-                        </li>
-                    </ul>
+
+                            <div>
+                                    <div class="message-data float-right mr-1">
+                                        <span class="message-data-name">Vincent</span>
+                                    </div>
+                                    <div class="message my-message float-right mr-1">
+                                        Are we meeting today? Project has been already finished and I have results to show you.
+                                    </div>
+                                </div>
+
                 </div>
             </div>
             <!--end body-->
             <!--start footer-->
             <div class="panel-footer">
                 <div class="input-group">
-                    <input id="btn-input" type="text" class="form-control input-sm" placeholder="Escribe aquí!!!" />
+                    <textarea id="input-message" rows="1" class="form-control input-sm" placeholder="Escribe aquí!!!"></textarea>
                     <span class="input-group-btn">
-                        <button class="btn btn-success btn-sm" id="btn-chat" style="height: 100%">Enviar</button>
+                        <button id="btn-send-message" class="btn btn-success btn-sm">Enviar</button>
                     </span>
                 </div>
             </div>
             <!--end footer-->
         </div>
     </div>
+    <div id="open-chat" class="btn-open-chat">
+        <i class="fa fa-commenting fa-3x" aria-hidden="true"></i>
+    </div>
 </body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
 </html>
