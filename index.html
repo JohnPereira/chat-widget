@@ -9,74 +9,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">  
     <title>Chat</title>
 </head>
-<body style="background: url('img/fondo.png')">
-    <div id="chat-widget" class="chat offset-lg-9 col-lg-3 offset-md-8 col-md-4 offset-sm-6 col-sm-6 offset-xs-0 col-xs-12">
-        <div class="panel panel-default">
-            <!--start header-->
-            <div class="panel-heading">
-                <div class="chat-header-content clearfix">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar" />        
-                    <div class="chat-about">
-                        <div class="chat-name">Vincent</div>
-                        <div class="chat-status">Activo <i class="fa fa-circle online"></i></div>             
-                    </div>
-                    <div class="chat-menu">
-                        <i id="btn-minimize" class="fa fa-minus" aria-hidden="true"></i>
-                        <i id="btn-close" class="fa fa-times" aria-hidden="true"></i>   
-                    </div>
-                </div>
-            </div>
-            <!--end header-->
-            <!--start body-->
-            <div class="panel-body">
-                <div class="chat-history">
-                    <div class="message">
-                        <div class="other-img ml-1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" /></div>
-                        
-                        <div class="other-message ml-1">
-                            <div>Are we meeting today? Project has been already finished and I have results to show you.</div>
-                        </div>
-                    </div>
+<body>
+    <div id="chat-widget" class="chat panel panel-default offset-lg-9 col-lg-3 offset-md-8 col-md-4 offset-sm-6 col-sm-6 offset-xs-0 col-xs-12">
 
-                    <div class="message clearfix">
-                        <div class="my-message float-right mr-1">
-                            <div>Are we meeting today? Project has been already finished and I have results to show you.</div>
-                        </div>
-                    </div>
-
-                    <div class="message">
-                            <div class="other-img ml-1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" /></div>
-                            <div class="other-message ml-1">
-                                <div>Are we meeting today? Project has been already finished and I have results to show you.</div>
-                            </div>
-                        </div>
-  
-                        <div class="message clearfix">
-                            <div class="my-message float-right mr-1">
-                                <div>Are we meeting today? Project has been already finished and I have results to show you.</div>
-                            </div>
-                        </div>
-
-                        <div class="message">
-                                <div class="other-img ml-1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" /></div>
-                                <div class="other-message ml-1">
-                                    <div>Are we meeting today? Project has been already finished and I have results to show you.</div>
-                                </div>
-                            </div>
-                </div>
-            </div>
-            <!--end body-->
-            <!--start footer-->
-            <div class="panel-footer">
-                <div class="input-group">
-                    <textarea id="input-message" rows="1" class="form-control input-sm" placeholder="Escribe aquí!!!"></textarea>
-                    <span class="input-group-btn">
-                        <button id="btn-send-message" class="btn btn-success btn-sm">Enviar</button>
-                    </span>
-                </div>
-            </div>
-            <!--end footer-->
-        </div>
     </div>
     <div id="open-chat" class="btn-open-chat">
         <i class="fa fa-commenting fa-3x" aria-hidden="true"></i>
@@ -84,5 +19,6 @@
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/chat-builder.js"></script>
 <script src="js/index.js"></script>
 </html>
